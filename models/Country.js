@@ -8,10 +8,10 @@ return db.query("Select * from Country",callback);
 
 },
 getCountryByCode:function(code,callback){
-    return db.query("select countryName from Country where countryCode=?",[code],callback);
+    return db.query("select countryName,countryCode, countryIdd from Country where countryCode=?",[code],callback);
 },
 getCodeByCountryName:function(name,callback){
-    return db.query("select countryCode from Country where countryName=?",[name],callback);
+    return db.query("select countryName,countryCode, countryIdd from Country where countryName=?",[name],callback);
 },
 };
 module.exports=Country;
