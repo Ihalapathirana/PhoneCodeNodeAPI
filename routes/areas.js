@@ -15,6 +15,21 @@ if(req.params.code){
         }
     });
 }
+else{
+
+ Area.getAllAreaList(function(err,rows){
+
+        if(err)
+        {
+            res.json(err);
+        }
+        else
+        {
+            res.json(rows);
+        }
+ 
+    });
+}
 });
 
 router.get('/getAreaCode/:name?',function(req,res,next){

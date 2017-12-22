@@ -1,7 +1,11 @@
 var db=require('../dbconnection');
 
 var Operator={
+getAllOperators:function(callback){
 
+return db.query("Select * from mobileOperator",callback);
+
+},
 getOperatorName:function(code,callback){
     return db.query("select operatorName from mobileOperator where mobileCode=?",[code],callback);
 },
