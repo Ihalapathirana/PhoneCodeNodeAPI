@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy":"gcloud app deploy",
     "start": "node ./bin/www"
   },
   "author": "",
