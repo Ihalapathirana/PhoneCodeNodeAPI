@@ -1,10 +1,12 @@
 var mysql=require('mysql');
 var connection=mysql.createPool({
 
-connectionLimit : 10,
+// google sql public IP
 host:'173.194.224.165',
+//host:'localhost',
 user:'root',
-password:'Anusha@123',
+//put db password
+password:'',
 database:'PhoneAPI'
 });
  

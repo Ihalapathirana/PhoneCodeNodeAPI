@@ -19,8 +19,6 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: false }));
 app.use(cookieParser());
 //app.use('/', routes);
 app.use('/',Countries);
-
-// app.use('/AllCountry',Countries);
 app.use('/AllArea',Areas);
 app.use('/AllOperators',Operators);
 
